@@ -4,7 +4,6 @@
 })()
 
 function add_json(value){
-	console.log("add_json");
 	items.push(value);
 	var json_input = document.getElementById('json_input');
 	json_input.value = JSON.stringify(items);
@@ -12,7 +11,6 @@ function add_json(value){
 
 function update_json(){
 	var json_input = document.getElementById('json_input');
-	console.log("updateing json")
 	items = [];
 	var item_list = document.getElementById('item_list');
 	children = item_list.children;
@@ -34,12 +32,9 @@ function update_json(){
 	 * @return {[type]} [description]
 	 */
 	function add_item(value){
-			console.log("add item")
 			var item_list = document.getElementById('item_list');
-			console.log(item_list);
 		
 			var new_list_item = document.createElement('li');
-			console.log(new_list_item);
 			new_list_item.className += "list_item";
 			var new_delete = document.createElement('a');
 			new_delete.className += "delete_link";
@@ -72,7 +67,6 @@ function update_json(){
 		json_error.style.visibility='hidden';		var item_input = document.getElementById('item_input');
 
 		var value = document.getElementById('item_input').value;
-		console.log(value);
 
 		if (value !== ""){
 
@@ -99,7 +93,6 @@ function update_json(){
 			}
 			items = [];
 			for(var x = 0; x< json_list.length;x++){
-				console.log(json_list[x]);
 				add_item(json_list[x]);
 			}
 
