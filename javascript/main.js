@@ -3,12 +3,21 @@
 	items = [];
 })()
 
+/**
+ * used to update the json string in the json text box when a single item is entered.
+ * @param {string} value the value entered into the item text box.
+ */
 function add_json(value){
 	items.push(value);
 	var json_input = document.getElementById('json_input');
 	json_input.value = JSON.stringify(items);
 };
 
+/**
+ * Function called when an item is deleted. It erases 
+ * the array of strings that we have that represents the items
+ * and recreates the list. Then it updates the json textbox string.
+ */
 function update_json(){
 	var json_input = document.getElementById('json_input');
 	items = [];
@@ -28,8 +37,8 @@ function update_json(){
 	}
 };
 	/**
-	 * [add_item description]
-	 * @return {[type]} [description]
+	 * function called when adding an item to the item list either by submitting 
+	 * a singular item or by iterating through json list
 	 */
 	function add_item(value){
 			var item_list = document.getElementById('item_list');
@@ -58,8 +67,7 @@ function update_json(){
 	};
 
 	/**
-	 * single submit is called whne someone
-	 * @return {[type]} [description]
+	 * single submit is called whne someone submits a single item using the add button
 	 */
 	function single_submit(){
 		
@@ -76,8 +84,9 @@ function update_json(){
 	};
 
 	/**
-	 * [json_submit description]
-	 * @return {[type]} [description]
+	 * json_submit is called when a user attempts to submit a json string from the load json
+	 * button. If the content is not parsable with json then an error message is shown and the string
+	 * in the textbox reverts to the current list of items or blank if no items exist.
 	 */
 	function json_submit(){
 		var json_input = document.getElementById('json_input');
