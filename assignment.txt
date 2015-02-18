@@ -1,0 +1,18 @@
+Senior Level
+============
+
+Mark up the attached comp using HTML/CSS (No external CSS libraries please).
+It should be visually accurate to the comp in IE9+, Firefox, and WebKit browsers 
+
+Add the following functionality:
+A user must be able to add an item to the list, and remove one or more items from the list.
+
+There must be a way to retrieve the current state of the list as a JSON string, and a way to restore state from a JSON string.
+
+It should work in IE9+, Firefox, and WebKit browsers. Don't use any external JS libraries.
+
+
+Junior / Mid Level
+=================
+
+Same as above but you can use jQuery.
