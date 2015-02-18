@@ -112,7 +112,7 @@ margin-top: 2%;
   counter-increment: li;
   background: linear-gradient(#ffffff,#fffae8);
   vertical-align: top;
-  padding: 1% 2%;
+  padding: 0px 2% 2% 2%;
   font-family: "Georgia";
 }
 
