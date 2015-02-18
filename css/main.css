@@ -1,151 +1,201 @@
-body{
-	background-color: #f2f2f2;
-	font-family: Lucida Sans Unicode, Arial Unicode MS, sans-serif;
-}
-.centered{
-margin-left: 15%;
-margin-right: 15%;
-}
+body
+{
+    font-family: Lucida Sans Unicode, Arial Unicode MS, sans-serif;
 
-.header{
-	margin:1.5% 0px;
+    background-color: #f2f2f2;
 }
-.app{
-display: inline-block;
-background-color: white;
-border: 1px solid #d4d4d4;
-width: 100%;
+.centered
+{
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
-.input_pane{
-	float:left;
-	background: linear-gradient(#fcfcfc,#e6e6e6);
-	width:45%;
-	margin: 4% 0% 4% 3%;
-	box-shadow: .2em .2em .75em #aeaeae;
+.header
+{
+    margin: 1.5% 0;
+}
+.app
+{
+    display: inline-block;
+
+    width: 100%;
+
+    border: 1px solid #d4d4d4;
+    background-color: white;
 }
 
-#single_item_form{
-	margin-top: 4%
+.input_pane
+{
+    float: left;
+
+    width: 45%;
+    margin: 4% 0 4% 3%;
+
+    background: linear-gradient(#fcfcfc,#e6e6e6);
+    box-shadow: .2em .2em .75em #aeaeae;
 }
 
-.label{
-	text-align: right;
-	margin-left: 4%;
-	margin-right: %1;
-	display: inline-block;
-	width: 15%;
-	vertical-align: top;
-	font-size: 90%
+#single_item_form
+{
+    margin-top: 4%;
 }
 
-.input_box{
-	border: 1px solid #e6e6e6;
-	border-radius: 5px;
-	line-height: 2em;
+.label
+{
+    font-size: 90%;
+
+    display: inline-block;
+
+    width: 15%;
+    margin-right: 1%;
+    margin-left: 4%;
+
+    text-align: right;
+    vertical-align: top;
 }
 
-#item_input{
-	width:60%;
+.input_box
+{
+    line-height: 2em;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
 }
 
-.submit_btn{
-	padding: 0px 2%;
-	border:none;
-	border-radius: 5px;
-	color: white;
-	font-size: .75em;
-	line-height: 2em;
-	background: linear-gradient(#7fb750,#3c6127);
+#item_input
+{
+    width: 60%;
 }
 
-#item_btn{
-	float:right;
-	margin-right: 3%;
-	margin-left: 3%;
+.submit_btn
+{
+    font-size: .75em;
+    line-height: 2em;
 
+    padding: 0 2%;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#7fb750,#3c6127);
 }
 
-#json_form{
-margin-top: 2%;
+#item_btn
+{
+    float: right;
+
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
-#json_input{
-  width: 75%;
-  overflow: auto;
+#json_form
+{
+    margin-top: 2%;
 }
 
-#json_error{
-	font-size: 60%;
-	color:red;
-	display: inline-block;
-	visibility: hidden;
-}
-#json_btn{
-	margin-bottom: 4%;
+#json_input
+{
+    overflow: auto;
+
+    width: 75%;
 }
 
-.item_pane{
-	float:right;
-	width:45%;
-	margin: 4% 3% 4% 0%;
+#json_error
+{
+    font-size: 60%;
+
+    display: inline-block;
+    visibility: hidden;
+
+    color: red;
+}
+#json_btn
+{
+    margin-bottom: 4%;
 }
 
-.item_title{
-	margin-top: -4%;
+.item_pane
+{
+    float: right;
 
+    width: 45%;
+    margin: 4% 3% 4% 0;
 }
 
-#item_list{
-  counter-reset: li; /* Initiate a counter */
-  list-style: none; /* Remove default numbering */
-  padding: 0px;
-  margin-top: 0px;
-  border-top: 1px solid #d4d4d4;
-  border-bottom: 1px solid #d4d4d4;
+.item_title
+{
+    margin-top: -4%;
 }
 
+#item_list
+{
+    margin-top: 0;
+    padding: 0;
 
+    list-style: none; /* Remove default numbering */
 
-#item_list li:before{
-  content: counter(li) ".";
-  counter-increment: li;
-  background: linear-gradient(#ffffff,#fffae8);
-  vertical-align: top;
-  padding: 0px 2% 2% 2%;
-  font-family: "Georgia";
-}
+    counter-reset: li; /* Initiate a counter */
 
-.list_item{
-	padding: 1.35% 1%;
-  border-bottom: 1px dashed #d4d4d4;
-}
-.list_item:last-child { 
-	border-bottom: none; 
-}
-
-
-.item{
-	font-family: "Georgia";
-	margin-left: 3%;
-	display: inline-block;
-	color: #ec6c27;
-	word-wrap: break-word;
-	max-width: 75%;
-}
-
-.delete_link{
-	text-decoration: none;	
-	float:right;
-	display: inline-block;
-	margin-right: 3%;
-	color: #4199d3;
-	font-size: 75%;
-}
-
-.delete_link:hover{
-	cursor:pointer;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 
 
+#item_list li:before
+{
+    font-family: 'Georgia';
+
+    padding: 0 2% 2% 2%;
+
+    content: counter(li) '.';
+    counter-increment: li;
+    vertical-align: top;
+
+    background: linear-gradient(#fff,#fffae8);
+}
+
+.list_item
+{
+    padding: 1.35% 1%;
+
+    border-bottom: 1px dashed #d4d4d4;
+}
+.list_item:last-child
+{
+    border-bottom: none;
+}
+
+
+.item
+{
+    font-family: 'Georgia';
+
+    display: inline-block;
+
+    max-width: 75%;
+    margin-left: 3%;
+
+    word-wrap: break-word;
+
+    color: #ec6c27;
+}
+
+.delete_link
+{
+    font-size: 75%;
+
+    display: inline-block;
+    float: right;
+
+    margin-right: 3%;
+
+    text-decoration: none;
+
+    color: #4199d3;
+}
+
+.delete_link:hover
+{
+    cursor: pointer;
+}

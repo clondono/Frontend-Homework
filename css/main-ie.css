@@ -1,22 +1,27 @@
 
-.input_pane{
-filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcfcfc', EndColorStr='#e6e6e6'); 
+.input_pane
+{
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcfcfc', EndColorStr='#e6e6e6');
 }
 
-.submit_btn{
-filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#7fb750', EndColorStr='#3c6127');
-border-radius: 13px;
+.submit_btn
+{
+    border-radius: 13px;
+
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#7fb750', EndColorStr='#3c6127');
 }
 
-.input_box{
-	line-height: normal;
+.input_box
+{
+    line-height: normal;
 }
 
-#item_input{
-	height:20px;
+#item_input
+{
+    height: 20px;
 }
 
-#json_input{
-
-	height:50px;
+#json_input
+{
+    height: 50px;
 }
